@@ -1,0 +1,20 @@
+[
+{
+  "directory": "D:/VSCode/Code/C/Subtraction/build",
+  "command": "D:\\Mingw\\bin\\gcc.exe   -g -o CMakeFiles\\subtraction.dir\\main.c.obj -c D:\\VSCode\\Code\\C\\Subtraction\\main.c",
+  "file": "D:/VSCode/Code/C/Subtraction/main.c",
+  "output": "CMakeFiles/subtraction.dir/main.c.obj"
+},
+{
+  "directory": "D:/VSCode/Code/C/Subtraction/build",
+  "command": "D:\\Mingw\\bin\\gcc.exe   -g -o CMakeFiles\\subtraction.dir\\math_subtract.c.obj -c D:\\VSCode\\Code\\C\\Subtraction\\math_subtract.c",
+  "file": "D:/VSCode/Code/C/Subtraction/math_subtract.c",
+  "output": "CMakeFiles/subtraction.dir/math_subtract.c.obj"
+},
+{
+  "directory": "D:/VSCode/Code/C/Subtraction/build",
+  "command": "D:\\Mingw\\bin\\gcc.exe   -g -o CMakeFiles\\subtraction.dir\\print_output.c.obj -c D:\\VSCode\\Code\\C\\Subtraction\\print_output.c",
+  "file": "D:/VSCode/Code/C/Subtraction/print_output.c",
+  "output": "CMakeFiles/subtraction.dir/print_output.c.obj"
+}
+]
