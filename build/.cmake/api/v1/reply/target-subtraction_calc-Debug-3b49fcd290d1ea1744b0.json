@@ -34,7 +34,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 9,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -58,6 +58,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "D:/VSCode/Code/C/Subtraction/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/VSCode/Code/C/Subtraction/build"
 				}
 			],
 			"language" : "C",

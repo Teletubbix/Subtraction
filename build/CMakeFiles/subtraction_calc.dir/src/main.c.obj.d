@@ -11,4 +11,5 @@ CMakeFiles/subtraction_calc.dir/src/main.c.obj: \
  D:/Mingw/x86_64-w64-mingw32/include/swprintf.inl \
  D:/Mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  D:/VSCode/Code/C/Subtraction/include/math_subtract.h \
- D:/VSCode/Code/C/Subtraction/include/print_output.h
+ D:/VSCode/Code/C/Subtraction/include/print_output.h \
+ D:/VSCode/Code/C/Subtraction/build/config.h

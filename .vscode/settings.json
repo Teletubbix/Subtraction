@@ -1,5 +1,6 @@
 {
-  "cmake.preferredGenerators": [ 
+  "cmake.preferredGenerators": [
+     
     "MinGW Makefiles"
   ]
 }
