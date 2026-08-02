@@ -1,4 +1,17 @@
 {
+	"globsDependent" : 
+	[
+		{
+			"expression" : "D:/VSCode/Code/C/Subtraction/*.c",
+			"listDirectories" : true,
+			"paths" : 
+			[
+				"D:/VSCode/Code/C/Subtraction/main.c",
+				"D:/VSCode/Code/C/Subtraction/math_subtract.c",
+				"D:/VSCode/Code/C/Subtraction/print_output.c"
+			]
+		}
+	],
 	"inputs" : 
 	[
 		{

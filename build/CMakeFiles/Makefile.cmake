@@ -43,6 +43,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.4.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.4.1/CMakeSystem.cmake"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
   )
 
 # The corresponding makefile is:
