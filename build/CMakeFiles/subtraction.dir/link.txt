@@ -1,3 +1,0 @@
-D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\subtraction.dir/objects.a
-D:\Mingw\bin\ar.exe qc CMakeFiles\subtraction.dir/objects.a @CMakeFiles\subtraction.dir\objects1.rsp
-D:\Mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\subtraction.dir/objects.a -Wl,--no-whole-archive -o D:\VSCode\Code\C\Subtraction\bin\subtraction.exe -Wl,--out-implib,libsubtraction.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\subtraction.dir\linkLibs.rsp
