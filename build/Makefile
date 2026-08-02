@@ -117,89 +117,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named subtraction
+# Target rules for targets named subtraction_calc
 
 # Build rule for target.
-subtraction: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 subtraction
-.PHONY : subtraction
+subtraction_calc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 subtraction_calc
+.PHONY : subtraction_calc
 
 # fast build rule for target.
-subtraction/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/build
-.PHONY : subtraction/fast
+subtraction_calc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/build
+.PHONY : subtraction_calc/fast
 
-main.obj: main.c.obj
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/main.c.s
-.PHONY : main.c.s
-
-math_subtract.obj: math_subtract.c.obj
-.PHONY : math_subtract.obj
+src/main.obj: src/main.c.obj
+.PHONY : src/main.obj
 
 # target to build an object file
-math_subtract.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/math_subtract.c.obj
-.PHONY : math_subtract.c.obj
+src/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/main.c.obj
+.PHONY : src/main.c.obj
 
-math_subtract.i: math_subtract.c.i
-.PHONY : math_subtract.i
+src/main.i: src/main.c.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-math_subtract.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/math_subtract.c.i
-.PHONY : math_subtract.c.i
+src/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/main.c.i
+.PHONY : src/main.c.i
 
-math_subtract.s: math_subtract.c.s
-.PHONY : math_subtract.s
+src/main.s: src/main.c.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-math_subtract.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/math_subtract.c.s
-.PHONY : math_subtract.c.s
+src/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/main.c.s
+.PHONY : src/main.c.s
 
-print_output.obj: print_output.c.obj
-.PHONY : print_output.obj
+src/math_subtract.obj: src/math_subtract.c.obj
+.PHONY : src/math_subtract.obj
 
 # target to build an object file
-print_output.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/print_output.c.obj
-.PHONY : print_output.c.obj
+src/math_subtract.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj
+.PHONY : src/math_subtract.c.obj
 
-print_output.i: print_output.c.i
-.PHONY : print_output.i
+src/math_subtract.i: src/math_subtract.c.i
+.PHONY : src/math_subtract.i
 
 # target to preprocess a source file
-print_output.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/print_output.c.i
-.PHONY : print_output.c.i
+src/math_subtract.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/math_subtract.c.i
+.PHONY : src/math_subtract.c.i
 
-print_output.s: print_output.c.s
-.PHONY : print_output.s
+src/math_subtract.s: src/math_subtract.c.s
+.PHONY : src/math_subtract.s
 
 # target to generate assembly for a file
-print_output.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction.dir\build.make CMakeFiles/subtraction.dir/print_output.c.s
-.PHONY : print_output.c.s
+src/math_subtract.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/math_subtract.c.s
+.PHONY : src/math_subtract.c.s
+
+src/print_output.obj: src/print_output.c.obj
+.PHONY : src/print_output.obj
+
+# target to build an object file
+src/print_output.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/print_output.c.obj
+.PHONY : src/print_output.c.obj
+
+src/print_output.i: src/print_output.c.i
+.PHONY : src/print_output.i
+
+# target to preprocess a source file
+src/print_output.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/print_output.c.i
+.PHONY : src/print_output.c.i
+
+src/print_output.s: src/print_output.c.s
+.PHONY : src/print_output.s
+
+# target to generate assembly for a file
+src/print_output.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/print_output.c.s
+.PHONY : src/print_output.c.s
 
 # Help Target
 help:
@@ -209,16 +209,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... subtraction
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... math_subtract.obj
-	@echo ... math_subtract.i
-	@echo ... math_subtract.s
-	@echo ... print_output.obj
-	@echo ... print_output.i
-	@echo ... print_output.s
+	@echo ... subtraction_calc
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
+	@echo ... src/math_subtract.obj
+	@echo ... src/math_subtract.i
+	@echo ... src/math_subtract.s
+	@echo ... src/print_output.obj
+	@echo ... src/print_output.i
+	@echo ... src/print_output.s
 .PHONY : help
 
 

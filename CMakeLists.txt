@@ -6,6 +6,8 @@ set(CMAKE_BUILD_TYPE Debug)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
-file(GLOB SOURCES CONFIGURE_DEPENDS "*.c")
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
-add_executable(subtraction ${SOURCES})
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.c")
+
+add_executable(subtraction_calc ${SOURCES})
