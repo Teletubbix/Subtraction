@@ -112,9 +112,21 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P D:\VSCode\Code\C\Subtraction\build\CMakeFiles\VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named math
+
+# Build rule for target.
+math: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 math
+.PHONY : math
+
+# fast build rule for target.
+math/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math.dir\build.make CMakeFiles/math.dir/build
+.PHONY : math/fast
 
 #=============================================================================
 # Target rules for targets named subtraction_calc
@@ -158,7 +170,7 @@ src/math_subtract.obj: src/math_subtract.c.obj
 
 # target to build an object file
 src/math_subtract.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math.dir\build.make CMakeFiles/math.dir/src/math_subtract.c.obj
 .PHONY : src/math_subtract.c.obj
 
 src/math_subtract.i: src/math_subtract.c.i
@@ -166,7 +178,7 @@ src/math_subtract.i: src/math_subtract.c.i
 
 # target to preprocess a source file
 src/math_subtract.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/math_subtract.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math.dir\build.make CMakeFiles/math.dir/src/math_subtract.c.i
 .PHONY : src/math_subtract.c.i
 
 src/math_subtract.s: src/math_subtract.c.s
@@ -174,7 +186,7 @@ src/math_subtract.s: src/math_subtract.c.s
 
 # target to generate assembly for a file
 src/math_subtract.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/src/math_subtract.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math.dir\build.make CMakeFiles/math.dir/src/math_subtract.c.s
 .PHONY : src/math_subtract.c.s
 
 src/print_output.obj: src/print_output.c.obj
@@ -209,6 +221,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... math
 	@echo ... subtraction_calc
 	@echo ... src/main.obj
 	@echo ... src/main.i
@@ -230,7 +243,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P D:\VSCode\Code\C\Subtraction\build\CMakeFiles\VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,3 +1,3 @@
 D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\subtraction_calc.dir/objects.a
 D:\Mingw\bin\ar.exe qc CMakeFiles\subtraction_calc.dir/objects.a @CMakeFiles\subtraction_calc.dir\objects1.rsp
-D:\Mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\subtraction_calc.dir/objects.a -Wl,--no-whole-archive -o D:\VSCode\Code\C\Subtraction\bin\subtraction_calc.exe -Wl,--out-implib,libsubtraction_calc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\subtraction_calc.dir\linkLibs.rsp
+D:\Mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\subtraction_calc.dir/objects.a -Wl,--no-whole-archive -o D:\VSCode\Code\C\Subtraction\bin\subtraction_calc.exe -Wl,--out-implib,D:\VSCode\Code\C\Subtraction\lib\libsubtraction_calc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\subtraction_calc.dir\linkLibs.rsp

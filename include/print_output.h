@@ -1,2 +1,2 @@
-void show_result(double value);
+void print_output(double value);
 #pragma once

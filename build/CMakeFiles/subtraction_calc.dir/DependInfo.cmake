@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/VSCode/Code/C/Subtraction/src/main.c" "CMakeFiles/subtraction_calc.dir/src/main.c.obj" "gcc" "CMakeFiles/subtraction_calc.dir/src/main.c.obj.d"
-  "D:/VSCode/Code/C/Subtraction/src/math_subtract.c" "CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj" "gcc" "CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj.d"
   "D:/VSCode/Code/C/Subtraction/src/print_output.c" "CMakeFiles/subtraction_calc.dir/src/print_output.c.obj" "gcc" "CMakeFiles/subtraction_calc.dir/src/print_output.c.obj.d"
   )
 

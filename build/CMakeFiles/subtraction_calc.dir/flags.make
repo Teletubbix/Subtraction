@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = @CMakeFiles\subtraction_calc.dir\includes_C.rsp
 
-C_FLAGS = -g
+C_FLAGS = -g -Wall -Wextra
 

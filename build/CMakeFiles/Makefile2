@@ -62,10 +62,12 @@ CMAKE_BINARY_DIR = D:\VSCode\Code\C\Subtraction\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/math.dir/all
 all: CMakeFiles/subtraction_calc.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/math.dir/codegen
 codegen: CMakeFiles/subtraction_calc.dir/codegen
 .PHONY : codegen
 
@@ -74,22 +76,55 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/math.dir/clean
 clean: CMakeFiles/subtraction_calc.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/math.dir
+
+# All Build rule for target.
+CMakeFiles/math.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math.dir\build.make CMakeFiles/math.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math.dir\build.make CMakeFiles/math.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=1,2 "Built target math"
+.PHONY : CMakeFiles/math.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/math.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\VSCode\Code\C\Subtraction\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/math.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\VSCode\Code\C\Subtraction\build\CMakeFiles 0
+.PHONY : CMakeFiles/math.dir/rule
+
+# Convenience name for target.
+math: CMakeFiles/math.dir/rule
+.PHONY : math
+
+# codegen rule for target.
+CMakeFiles/math.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math.dir\build.make CMakeFiles/math.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=1,2 "Finished codegen for target math"
+.PHONY : CMakeFiles/math.dir/codegen
+
+# clean rule for target.
+CMakeFiles/math.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\math.dir\build.make CMakeFiles/math.dir/clean
+.PHONY : CMakeFiles/math.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/subtraction_calc.dir
 
 # All Build rule for target.
-CMakeFiles/subtraction_calc.dir/all:
+CMakeFiles/subtraction_calc.dir/all: CMakeFiles/math.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=1,2,3,4 "Built target subtraction_calc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=3,4,5 "Built target subtraction_calc"
 .PHONY : CMakeFiles/subtraction_calc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/subtraction_calc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\VSCode\Code\C\Subtraction\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\VSCode\Code\C\Subtraction\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/subtraction_calc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\VSCode\Code\C\Subtraction\build\CMakeFiles 0
 .PHONY : CMakeFiles/subtraction_calc.dir/rule
@@ -101,7 +136,7 @@ subtraction_calc: CMakeFiles/subtraction_calc.dir/rule
 # codegen rule for target.
 CMakeFiles/subtraction_calc.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\subtraction_calc.dir\build.make CMakeFiles/subtraction_calc.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target subtraction_calc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=3,4,5 "Finished codegen for target subtraction_calc"
 .PHONY : CMakeFiles/subtraction_calc.dir/codegen
 
 # clean rule for target.
@@ -116,7 +151,6 @@ CMakeFiles/subtraction_calc.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P D:\VSCode\Code\C\Subtraction\build\CMakeFiles\VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

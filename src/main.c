@@ -4,14 +4,14 @@
 #include "config.h"
 
 int main() {
-    printf("Subtraction Calculator v%s\n", PROJECT_VERSION);
+    printf("Subtraction Calculator v%s (%s mode)\n", PROJECT_VERSION, BUILD_TYPE);
 
     double num1, num2;
     printf("Enter two numbers (first - second): ");
     scanf("%lf %lf", &num1, &num2);
 
     double ans = subtract(num1, num2);
-    show_result(ans);
+    print_output(ans);
 
     return 0;
 }

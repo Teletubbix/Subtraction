@@ -86,26 +86,11 @@ CMakeFiles/subtraction_calc.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/subtraction_calc.dir/src/main.c.s"
 	D:\Mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\VSCode\Code\C\Subtraction\src\main.c -o CMakeFiles\subtraction_calc.dir\src\main.c.s
 
-CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj: CMakeFiles/subtraction_calc.dir/flags.make
-CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj: CMakeFiles/subtraction_calc.dir/includes_C.rsp
-CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj: D:/VSCode/Code/C/Subtraction/src/math_subtract.c
-CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj: CMakeFiles/subtraction_calc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj"
-	D:\Mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj -MF CMakeFiles\subtraction_calc.dir\src\math_subtract.c.obj.d -o CMakeFiles\subtraction_calc.dir\src\math_subtract.c.obj -c D:\VSCode\Code\C\Subtraction\src\math_subtract.c
-
-CMakeFiles/subtraction_calc.dir/src/math_subtract.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/subtraction_calc.dir/src/math_subtract.c.i"
-	D:\Mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\VSCode\Code\C\Subtraction\src\math_subtract.c > CMakeFiles\subtraction_calc.dir\src\math_subtract.c.i
-
-CMakeFiles/subtraction_calc.dir/src/math_subtract.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/subtraction_calc.dir/src/math_subtract.c.s"
-	D:\Mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\VSCode\Code\C\Subtraction\src\math_subtract.c -o CMakeFiles\subtraction_calc.dir\src\math_subtract.c.s
-
 CMakeFiles/subtraction_calc.dir/src/print_output.c.obj: CMakeFiles/subtraction_calc.dir/flags.make
 CMakeFiles/subtraction_calc.dir/src/print_output.c.obj: CMakeFiles/subtraction_calc.dir/includes_C.rsp
 CMakeFiles/subtraction_calc.dir/src/print_output.c.obj: D:/VSCode/Code/C/Subtraction/src/print_output.c
 CMakeFiles/subtraction_calc.dir/src/print_output.c.obj: CMakeFiles/subtraction_calc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/subtraction_calc.dir/src/print_output.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/subtraction_calc.dir/src/print_output.c.obj"
 	D:\Mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/subtraction_calc.dir/src/print_output.c.obj -MF CMakeFiles\subtraction_calc.dir\src\print_output.c.obj.d -o CMakeFiles\subtraction_calc.dir\src\print_output.c.obj -c D:\VSCode\Code\C\Subtraction\src\print_output.c
 
 CMakeFiles/subtraction_calc.dir/src/print_output.c.i: cmake_force
@@ -119,20 +104,19 @@ CMakeFiles/subtraction_calc.dir/src/print_output.c.s: cmake_force
 # Object files for target subtraction_calc
 subtraction_calc_OBJECTS = \
 "CMakeFiles/subtraction_calc.dir/src/main.c.obj" \
-"CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj" \
 "CMakeFiles/subtraction_calc.dir/src/print_output.c.obj"
 
 # External object files for target subtraction_calc
 subtraction_calc_EXTERNAL_OBJECTS =
 
 D:/VSCode/Code/C/Subtraction/bin/subtraction_calc.exe: CMakeFiles/subtraction_calc.dir/src/main.c.obj
-D:/VSCode/Code/C/Subtraction/bin/subtraction_calc.exe: CMakeFiles/subtraction_calc.dir/src/math_subtract.c.obj
 D:/VSCode/Code/C/Subtraction/bin/subtraction_calc.exe: CMakeFiles/subtraction_calc.dir/src/print_output.c.obj
 D:/VSCode/Code/C/Subtraction/bin/subtraction_calc.exe: CMakeFiles/subtraction_calc.dir/build.make
+D:/VSCode/Code/C/Subtraction/bin/subtraction_calc.exe: D:/VSCode/Code/C/Subtraction/lib/libmath.a
 D:/VSCode/Code/C/Subtraction/bin/subtraction_calc.exe: CMakeFiles/subtraction_calc.dir/linkLibs.rsp
 D:/VSCode/Code/C/Subtraction/bin/subtraction_calc.exe: CMakeFiles/subtraction_calc.dir/objects1.rsp
 D:/VSCode/Code/C/Subtraction/bin/subtraction_calc.exe: CMakeFiles/subtraction_calc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable D:\VSCode\Code\C\Subtraction\bin\subtraction_calc.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\VSCode\Code\C\Subtraction\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable D:\VSCode\Code\C\Subtraction\bin\subtraction_calc.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\subtraction_calc.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

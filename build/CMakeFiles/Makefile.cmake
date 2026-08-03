@@ -129,8 +129,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.4.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.1/CMakeRCCompiler.cmake"
   "CMakeFiles/4.4.1/CMakeSystem.cmake"
-  "CMakeFiles/VerifyGlobs.cmake"
-  "CMakeFiles/cmake.verify_globs"
   "D:/VSCode/Code/C/Subtraction/include/config.h.in"
   )
 
@@ -156,5 +154,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/math.dir/DependInfo.cmake"
   "CMakeFiles/subtraction_calc.dir/DependInfo.cmake"
   )

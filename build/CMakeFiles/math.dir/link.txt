@@ -1,0 +1,2 @@
+D:\Mingw\bin\ar.exe qc D:\VSCode\Code\C\Subtraction\lib\libmath.a CMakeFiles/math.dir/src/math_subtract.c.obj
+D:\Mingw\bin\ranlib.exe D:\VSCode\Code\C\Subtraction\lib\libmath.a
